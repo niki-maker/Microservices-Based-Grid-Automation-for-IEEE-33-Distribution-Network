@@ -18,7 +18,7 @@ This repository presents a **hierarchical and event-driven Active Distribution M
 
 The framework integrates:
 
-- Volt–VAR Control and Network Reconfiguration (EnVVarco)
+- Volt–VAR Control and Network Reconfiguration (EnVVarco + NR)
 - Trigger-Based Execution Module
 - Auto-Reclosure (AR) Protection System
 - Service Restoration (SR) Mechanism
@@ -201,3 +201,100 @@ Simulation base:
 ---
 
 # 🔄 Control Flow
+
+The framework operates in a hierarchical and event-driven manner.  
+Control authority transitions automatically based on system conditions.
+
+Normal Operation
+↓
+EnVVarco Optimization
+↓
+Trigger Module Execution
+↓
+If Abnormal Current or Fault Detected
+↓
+Auto-Reclosure (AR)
+↓
+If Fault is Transient → System Restored
+If Fault is Permanent → Breaker Lockout
+↓
+Service Restoration (SR)
+↓
+Topology Reconfiguration (if feasible)
+↓
+Return to EnVVarco Monitoring
+
+
+---
+
+# 🧪 Technologies Used
+
+- Python  
+- Flask  
+- OpenDSS  
+- NumPy  
+- Pandas  
+- Docker  
+- Grafana  
+- Excel-based structured data interface  
+
+---
+
+# 🚀 How to Run
+
+```bash
+# Clone repository
+git clone <repository-url>
+
+# Navigate to project directory
+cd <repository-folder>
+
+# Build containers
+docker-compose build
+
+# Start services
+docker-compose up
+
+Requirements
+
+Docker & Docker Compose installed
+
+OpenDSS dependencies included in container image
+
+Proper shared volume configuration
+
+## 🎯 Key Contributions
+
+Hierarchical integration of voltage regulation, protection, and restoration
+
+Multi-objective Fungal Growth Optimization for Volt–VAR control
+
+Loop-aware fault isolation in reconfigured networks
+
+Trigger-based execution layer for operational realism
+
+Dockerized modular deployment for reproducibility
+
+Utility-aligned automation architecture
+
+## 📌 Conclusion
+
+This repository provides a modular, scalable, and utility-aligned Active Distribution Management framework integrating:
+
+Steady-state voltage control
+
+Protection coordination
+
+Fault isolation
+
+Automated service restoration
+
+The architecture mirrors practical distribution automation systems and establishes a strong foundation for:
+
+Distributed Energy Resource (DER) coordination
+
+Adaptive protection settings
+
+Hardware-in-the-loop deployment
+
+Advanced grid automation research
