@@ -205,6 +205,7 @@ Simulation base:
 The framework operates in a hierarchical and event-driven manner.  
 Control authority transitions automatically based on system conditions.
 
+```
 Normal Operation
 ↓
 EnVVarco Optimization
@@ -223,7 +224,7 @@ Service Restoration (SR)
 Topology Reconfiguration (if feasible)
 ↓
 Return to EnVVarco Monitoring
-
+```
 
 ---
 
@@ -254,47 +255,48 @@ docker-compose build
 
 # Start services
 docker-compose up
+```
 
-Requirements
+## Requirements
 
-Docker & Docker Compose installed
+- Docker & Docker Compose installed
 
-OpenDSS dependencies included in container image
+- OpenDSS dependencies included in container image
 
-Proper shared volume configuration
+- Proper shared volume configuration
 
 ## 🎯 Key Contributions
 
-Hierarchical integration of voltage regulation, protection, and restoration
+- Hierarchical integration of voltage regulation, protection, and restoration
 
-Multi-objective Fungal Growth Optimization for Volt–VAR control
+- Multi-objective Fungal Growth Optimization for Volt–VAR control
 
-Loop-aware fault isolation in reconfigured networks
+- Loop-aware fault isolation in reconfigured networks
 
-Trigger-based execution layer for operational realism
+- Trigger-based execution layer for operational realism
 
-Dockerized modular deployment for reproducibility
+- Dockerized modular deployment for reproducibility
 
-Utility-aligned automation architecture
+- Utility-aligned automation architecture
 
 ## 📌 Conclusion
 
 This repository provides a modular, scalable, and utility-aligned Active Distribution Management framework integrating:
 
-Steady-state voltage control
+- Steady-state voltage control
 
-Protection coordination
+- Protection coordination
 
-Fault isolation
+- Fault isolation
 
-Automated service restoration
+- Automated service restoration
 
 The architecture mirrors practical distribution automation systems and establishes a strong foundation for:
 
-Distributed Energy Resource (DER) coordination
+- Distributed Energy Resource (DER) coordination
 
-Adaptive protection settings
+- Adaptive protection settings
 
-Hardware-in-the-loop deployment
+- Hardware-in-the-loop deployment
 
-Advanced grid automation research
+- Advanced grid automation research
